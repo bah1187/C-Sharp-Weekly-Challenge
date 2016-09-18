@@ -27,7 +27,7 @@ namespace CodeLou.CSharp.Week2.Challenge
             // Hint: You should use another method of the Console class and store the output into a
             //       variable to use later.
 
-            var entry = Console.ReadLine();
+           string entry = Console.ReadLine();
 
 
 
@@ -39,10 +39,9 @@ namespace CodeLou.CSharp.Week2.Challenge
             // If the result is true, write "Please enter a positive number." to the console.
             // Hint: The input that you captured is currently a string type. You will have to "parse" it
             //       as a different type in order to pass it to the IsLessThanOrEqualToZero function.
+            
 
-            int Seconds;
-
-            if (!int.TryParse(entry, out Seconds) || IsLessThanOrEqualToZero(Seconds))
+            if (IsLessThanOrEqualToZero(int int.Parse)
             {
                 Console.WriteLine("Please enter a positive number");
             }
@@ -58,19 +57,7 @@ namespace CodeLou.CSharp.Week2.Challenge
             //       Developer Network (MSDN) website contains all of the documentation for C#. If you want
             //       to learn more about loops, visit https://msdn.microsoft.com/en-us/library/32dbftby.aspx.
 
-
-            else
-            {
-                for (var index = Seconds; index > 0; index--)
-                {
-                    Console.WriteLine(index);
-                }
-                Console.WriteLine("LIFTOFF!");
-            }
-
-        }
-
-        Console.Writeline("Press <Enter> to exit...");
+            Console.WriteLine("Press <Enter> to exit...");
             Console.ReadLine();
         }
 
